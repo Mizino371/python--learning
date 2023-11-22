@@ -1,0 +1,143 @@
+Metóda `__init__` v jazyku Python je tzv. konštruktor triedy. Táto metóda sa volá automaticky pri vytváraní novej inštancie triedy. Jej hlavným účelom je inicializovať atribúty objektu alebo vykonať ďalšie úlohy, ktoré sú potrebné pri inicializácii objektu.
+
+Názov `__init__` je špeciálny, a Python ho automaticky volá pri vytváraní novej inštancie triedy. Táto metóda môže prijímať rôzne parametre, ale prvý parameter je vždy `self`, čo odkazuje na samotnú inštanciu triedy.
+
+Príklad:
+
+```python
+class Auto:
+    def __init__(self, znacka, model):
+        self.znacka = znacka
+        self.model = model
+        self.stav = "novy"
+
+    def popis(self):
+        return f"{self.znacka} {self.model}, stav: {self.stav}"
+
+# Vytvorenie novej inštancie triedy Auto a automatické volanie metódy __init__
+moje_auto = Auto(znacka="Toyota", model="Corolla")
+
+# Volanie metódy popis
+print(moje_auto.popis())  # Vypíše: Toyota Corolla, stav: novy
+```
+
+V tomto príklade `__init__` inicializuje atribúty `znacka`, `model` a `stav` pri vytváraní novej inštancie triedy `Auto`.
+
+
+
+
+
+V knižnici Tkinter v jazyku Python môžete konfigurovať tlačítka pomocou rôznych možností a atribútov. Tu sú niektoré základné atribúty, ktoré môžete použiť pri konfigurácii tlačítka:
+
+1. **text**: Text, ktorý sa zobrazí na tlačítku.
+2. **command**: Funkcia alebo metóda, ktorá sa vykoná, keď je tlačítko stlačené.
+3. **state**: Definuje stav tlačítka. Môže byť "normal" (štandardný), "disabled" (deaktivovaný) a ďalšie.
+4. **width** a **height**: Šírka a výška tlačítka.
+5. **bg** alebo **background**: Farba pozadia tlačítka.
+6. **fg** alebo **foreground**: Farba textu tlačítka.
+
+Príklad:
+
+```python
+import tkinter as tk
+
+def prikaz():
+    print("Tlačítko bolo stlačené!")
+
+root = tk.Tk()
+
+# Vytvorenie tlačítka a konfigurácia
+tlacitko = tk.Button(root, text="Stlač ma", command=prikaz, bg="lightblue", fg="black", width=15, height=2)
+tlacitko.pack(pady=20)
+
+root.mainloop()
+```
+
+V tomto príklade sme vytvorili tlačítko s textom "Stlač ma". Po stlačení tohto tlačítka sa vykoná funkcia `prikaz`. Atribúty `bg`, `fg`, `width` a `height` boli použité na konfiguráciu farby pozadia, farby textu a veľkosti tlačítka. Metóda `pack` slúži na umiestnenie tlačítka v okne.
+
+
+
+
+
+Poloha tlačítka v Tkinter môže byť určená pomocou jedného z riadiacich manažérov, ako sú `pack`, `grid` alebo `place`. Každý z týchto manažérov umožňuje umiestnenie tlačítka v určitom kontexte. Tu sú príklady pre každý manažér:
+
+### Riadiaci manažér `pack`:
+
+```python
+import tkinter as tk
+
+def prikaz():
+    print("Tlačítko bolo stlačené!")
+
+root = tk.Tk()
+
+# Vytvorenie tlačítka a umiestnenie pomocou pack
+tlacitko = tk.Button(root, text="Stlač ma", command=prikaz)
+tlacitko.pack(side="top", padx=10, pady=10)
+
+root.mainloop()
+```
+
+### Riadiaci manažér `grid`:
+
+```python
+import tkinter as tk
+
+def prikaz():
+    print("Tlačítko bolo stlačené!")
+
+root = tk.Tk()
+
+# Vytvorenie tlačítka a umiestnenie pomocou grid
+tlacitko = tk.Button(root, text="Stlač ma", command=prikaz)
+tlacitko.grid(row=0, column=0, padx=10, pady=10)
+
+root.mainloop()
+```
+
+### Riadiaci manažér `place`:
+
+```python
+import tkinter as tk
+
+def prikaz():
+    print("Tlačítko bolo stlačené!")
+
+root = tk.Tk()
+
+# Vytvorenie tlačítka a umiestnenie pomocou place
+tlacitko = tk.Button(root, text="Stlač ma", command=prikaz)
+tlacitko.place(x=50, y=50)
+
+root.mainloop()
+```
+
+V každom príklade môžete upravovať parametre manažérov (`side`, `row`, `column`, `x`, `y`, atď.) podľa vašich požiadaviek na umiestnenie tlačítka v okne.
+
+
+
+
+
+
+
+
+
+
+
+Táto časť kódu v Pythone je štandardným idiómom, ktorý kontroluje, či skript beží ako hlavný program (nie je importovaný ako modul). Rozoberme si to:
+
+- `__name__` je špeciálna premenná v Pythone, ktorá je nastavená na `"__main__"`, ak sa skript vykonáva priamo, a je nastavená na názov modulu, ak sa skript importuje ako modul.
+
+- Podmienka `if __name__ == "__main__":` kontroluje, či sa skript vykonáva ako hlavný program.
+
+- Ak je podmienka pravdivá, vykoná sa blok kódu pod ňou. Toto je bežný vzor, ktorý sa používa na vrátanie kódu, ktorý by mal byť spustený len v prípade, ak sa skript vykonáva priamo a nie je importovaný ako modul.
+
+V konkrétnom príklade:
+
+- `root = tk.Tk()` vytvára hlavné okno pomocou knižnice Tkinter.
+
+- `game = Kraby(root)` vytvára inštanciu triedy `Kraby`, pričom ako argument prenáša hlavné okno (`root`) do konštruktora triedy.
+
+- `root.mainloop()` spúšťa hlavnú smyčku udalostí Tkinter, ktorá je potrebná na zobrazenie grafického rozhrania a reagovanie na interakcie používateľa.
+
+Takže, keď spustíte tento skript, vytvorí sa okno Tkinter, vytvorí sa inštancia triedy `Kraby` a spustí sa hlavná smyčka udalostí na zobrazenie grafického rozhrania a spracovanie interakcií používateľa.

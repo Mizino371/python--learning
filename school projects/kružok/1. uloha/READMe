@@ -1,0 +1,17 @@
+
+V grafickej ploche sú dva kraby a dve tlačidlá, pozri obrázok. 
+Úlohou hráča je kliknutím na jedno z tlačidiel určiť,
+ či sú kraby rovnaké alebo rôzne.
+Po štarte programu si každý krab zvolí náhodný obrázok. 
+Ak sú kraby rovnaké a hráč klikne na tlačidlo „rovnaké“ alebo, 
+ak sú kraby rôzne a hráč klikne na tlačidlo „rôzne“, získava 1 bod. 
+Ak hráč neurčí správne, či sú kraby rovnaké alebo rôzne,
+ stráca 10 bodov, počet bodov sa zobrazuje v ľavom hornom rohu. 
+ Následne si každý krab zvolí náhodný obrázok. Hra nikdy nekončí.
+
+Na našom obrázku sú kraby rôzne, teda ak hráč stlačí tlačidlo
+ „rôzne“, pripočíta sa mu 1 bod, ale ak v našom prípade stlačí 
+ tlačidlo „rovnaké“, odpočíta sa mu 10 bodov.
+Pri programovaní využi iba moduly tkinter a random.
+Obrázky nájdeš v súboroch: krab0.png až krab5.png, rovnake.png, 
+rozne.png.
