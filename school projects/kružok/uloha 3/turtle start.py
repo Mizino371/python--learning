@@ -1,6 +1,5 @@
 import turtle as t
 import random as r
-sirka = r.randint(100,400)
 
 
 y=70
