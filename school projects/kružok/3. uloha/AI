@@ -1,0 +1,42 @@
+import turtle
+import random
+
+def draw_triangle(side_length):
+    for _ in range(3):
+        turtle.forward(side_length)
+        turtle.left(120)
+
+def draw_random_triangle_row(num_triangles, base_length):
+    for _ in range(num_triangles - 1):
+        side_length = random.randint(20, 80)
+        draw_triangle(side_length)
+        turtle.forward(side_length)
+
+    # Draw the last triangle to fill the base
+    last_side_length = base_length - (num_triangles - 1) * (side_length)
+    draw_triangle(last_side_length)
+
+def main():
+    turtle.speed(2)
+
+    height = 280
+    width = random.randint(100, 400)
+    distance_between_rows = 70
+
+    turtle.setup(width=width, height=height)
+
+    turtle.penup()
+    turtle.goto(-width / 2, height / 2)
+    turtle.pendown()
+
+    for row in range(4):
+        draw_random_triangle_row(4 - row, width)
+        turtle.penup()
+        turtle.goto(-width / 2, turtle.ycor() - distance_between_rows)
+        turtle.pendown()
+
+    turtle.hideturtle()
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
