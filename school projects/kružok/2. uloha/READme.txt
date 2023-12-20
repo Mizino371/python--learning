@@ -7,3 +7,8 @@ Program počas klikania na koláče kontroluje:
 Na našom obrázku hráč začal vyberať zo strednej tácky srdiečka. Zrejme si nevšimol, že sú tam len 3, ale potreboval by vybrať 4. Alebo ak by začal vyberať z ľavej tácky hviezdičky, tiež by dokázal vybrať 4.
 Pre projekt sú pripravené obrázky kolac0.png až kolac3.png.
 
+
+
+
+
+

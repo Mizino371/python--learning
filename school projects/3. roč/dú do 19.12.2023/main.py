@@ -1,21 +1,21 @@
 import tkinter
 import random as r 
-canvas = tkinter.Canvas(width=460,height=330)
-canvas.pack()
+c = tkinter.Canvas(width=460,height=330)
+c.pack()
 
 def kruzok():
     x = r.randrange(450)
     y = r.randrange(320)
     if 100 < x < 150 or 50 < y < 100:
-        canvas.create_oval(x-5, y-5, x+5, y+5, fill='green')
+        c.create_oval(x-5, y-5, x+5, y+5, fill='green')
     else:
-        canvas.create_oval(x-5, y-5, x+5, y+5, fill='yellow')
-    canvas.update()
+        c.create_oval(x-5, y-5, x+5, y+5, fill='yellow')
+    c.update()
 
 def loop():
     
     kruzok()
-    canvas.after(10, loop)
+    c.after(10, loop)
 
-canvas.after(10, loop)
-canvas.mainloop()
+c.after(10, loop)
+c.mainloop()
