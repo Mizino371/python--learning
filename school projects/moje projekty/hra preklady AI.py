@@ -57,7 +57,7 @@ class TranslationGame:
             self.score -= 2
             messagebox.showerror("Výsledok", f"Nesprávne! -2 body. Správna odpoveď bola: {self.current_english_word}")
 
-        if self.score >= 60:
+        if self.score >= 5:
             messagebox.showinfo("Gratulujeme!", "Dosiahol si 60 bodov!")
             self.master.destroy()
         else:
