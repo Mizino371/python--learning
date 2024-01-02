@@ -97,16 +97,41 @@ class slovicka_game:
             "unaware of": "nevedomý si",
             "unworkable": "nefunkčný, nepraktický"
         }
-    
-        self.aktualne_slovak_world, aktualne_english_world = r.choice(list(self.slovak_to_english.items()))
-    
-        lvl1_Lab = tk.Label(text="f{aktualne_slovak_world}",font= "Arial")
+        
+        self.aktualne_slovak_world, self.aktualne_english_world = r.choice(list(self.slovak_to_english.items()))
+        
+        lvl1_Lab = tk.Label(text=f"{self.aktualne_slovak_world}", font="Arial")
 
-        lvl1_Lab.place(y= 150, x = 290 )
+        lvl1_Lab.place(y=150, x=290)
         root = tk.Tk()
-        odpoved = tk.Entry(root)
+        self.odpoved = tk.Entry(root)
 
          
-        odpoved.pack(pady=20)
+        self.odpoved.pack(pady=20)
+
+    def chceck(self):
+        if self.odpoved.get() == self.aktualne_english_world:
+            messagebox.showinfo("Correct", "Correct")
+        else:
+            messagebox.showinfo("Wrong", "Wrong")
 
 
+    def next(self):
+        self.aktualne_slovak_world, self.aktualne_english_world = r.choice(list(self.slovak_to_english.items()))
+        lvl1_Lab = tk.Label(text=f"{self.aktualne_slovak_world}", font="Arial")
+        lvl1_Lab.place(y=150, x=290)
+        self.odpoved.delete(0, "end")
+        self.odpoved.pack(pady=20)
+        self.odpoved.focus_set()
+        self.odpoved.bind("<Return>", self.chceck)
+    
+    def main(self):
+        self.odpoved.focus_set()
+        self.odpoved.bind("<Return>", self.chceck)
+        self.odpoved.bind("<Return>", self.next)
+        self.root.mainloop()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    slovicka_game(root).main()
+    root.mainloop()
