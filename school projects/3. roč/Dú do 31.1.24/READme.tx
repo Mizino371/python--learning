@@ -1,0 +1,5 @@
+Zápisom entry1 = tkinter.Entry() sme vytvorili okienko, do ktorého môžeme zadávať text (niekedy ho nazývame aj vstupné alebo textové pole). 
+Referenciu na toto vstupné okienko sme uložili do premennej entry1. 
+Tiež ho potrebujeme zobraziť príkazom pack(). 
+Pri kreslení štvorčeka, po kliknutí na tlačidlo 3 si pozrieme pomocou funkcie entry1.get() aktuálne údaje v našom entry1 a nakreslíme ich do štvorčeka.
+Upravte program tak, aby vykreslil vedľa seba postupnosť štvorčekov podľa zadaných informácií vo vstupných poliach entry1 a entry2. Do entry1 zadávame, od ktorého čísla chceme opakovať cyklus, a do druhého zadávame, po ktoré číslo chceme opakovať cyklus (teda okrem neho samotného). Ešte sme museli v programe použiť funkciu int(), ktorá premení číslo v textovej podobe na číslo ako číselnú hodnotu, s ktorou môžeme pracovať ako s bežným číslom.
