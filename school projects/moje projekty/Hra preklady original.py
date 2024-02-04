@@ -9,7 +9,7 @@ class slovicka_game:
         self.slovak_to_english = {
 
             
-            "abandon": "opustiť, zanechať",
+            "abandon": f"opustiť" "zanechať",
             "absurd": "absurdný",
             "accuse": "obviniť",
             "adapt": "prispôsobiť sa",
