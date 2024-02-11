@@ -15,7 +15,7 @@ def kruzok():
 def loop():
     
     kruzok()
-    c.after(10, loop)
+    c.after(100, loop)
 
-c.after(10, loop)
+c.after(100, loop)
 c.mainloop()
