@@ -34,3 +34,49 @@ def loop():
     c.after(100, move_objects) 
 loop()
 c.mainloop()
+
+
+
+
+#doplnenie po okraj
+
+import tkinter as tk
+c = tk.Canvas( width=400, height=300, bg='white')
+c.pack()
+sirka_auto = 100
+sirka_bicykel = 200
+   
+
+  
+
+   
+
+def move_objects():
+    tag_coords_bicykel = c.coords("bicykel")
+    tag_coords_auto = c.coords("auto")
+    if -100<=tag_coords_auto[0]<=400:
+        c.move('auto', 5, 0)
+    else: 
+        c.move("auto",-500,0)
+    if -150<=tag_coords_bicykel[0]<=400:
+        c.move('bicykel', -5, 0)
+    else:
+        c.move("bicykel",550,0)
+
+
+c.create_rectangle(100, 150, 200, 200, fill='blue', tags='auto')
+c.create_oval(115, 200, 140, 225, fill='yellow', tags='auto')
+c.create_oval(160, 200, 185, 225, fill='yellow', tags='auto')
+
+c.create_oval(200, 100, 230, 130, fill='black', width=5, outline='black', tags='bicykel')
+c.create_oval(250, 100, 280, 130, fill='black', width=5, outline='black', tags='bicykel')
+c.create_line(215, 115, 230, 70, width=5,fill="black", tags='bicykel')
+c.create_line(225, 90, 240,115,width=5,fill="black", tags='bicykel')
+c.create_line(240,115,265, 115, width=5,fill="black", tags='bicykel')
+c.create_line(265, 115, 270, 85, width=5,fill="black", tags='bicykel')
+
+def loop():
+    c.after(100,loop)
+    c.after(100, move_objects) 
+loop()
+c.mainloop()
