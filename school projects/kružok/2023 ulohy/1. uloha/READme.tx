@@ -1,0 +1,18 @@
+Na novej planéte vychádza každý deň iné slnko. 
+Vnútro slnka tvorí N-uholník, jeho lúče sú obdĺžniky. 
+Navrhni projekt, ktorý umožní nakresliť takéto slnko.
+Na kreslenie slnka navrhni funkciu 
+slnko(n, strana, luc) 
+s tromi parametrami, ktoré určujú počet vrcholov N-uholníka, 
+dĺžku strany N-uholníka a dĺžku lúča.
+Na kreslenie lúča navrhni funkciu 
+obdlznik(a, b) 
+s dvomi parametrami, ktoré určujú dĺžky strán obdĺžnika. 
+Túto funkciu použi vo funkcii slnko na kreslenie lúčov slnka.
+Po štarte programu nakresli na náhodnom mieste jedno slnko s 
+náhodnými hodnotami pre dĺžky strán.
+
+Súradnice x, y začiatku kreslenia slnka a hodnoty parametrov n, 
+strana a luc funkcie slnko vygeneruj tak, aby platilo: 
+-350<=x<=300, 100<=y<=220, 5<=n<=15, 
+10<=strana<=20, 30<=luc<=80.
