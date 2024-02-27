@@ -3,15 +3,15 @@ from tkinter import PhotoImage
 c= tkinter.Canvas(width=2000,height=560)
 c.pack()
 
-
+nespr_zver_count = 0
 def fotky():
-    nespr_zver_count = 0
-    global zviera
+    
+    global zviera,nespr_zver_count,vyber_zviera
     vyber_zviera = random.randint(0,4)
     zviera =PhotoImage(file=f"school_projects/kružok/2023ulohy/2. uloha/zvierata+stopy/zviera{vyber_zviera}.png", ) 
     stopy = PhotoImage(file=f"school_projects/kružok/2023ulohy/2. uloha/zvierata+stopy/stopy{vyber_zviera}.png", )
-   
-    for i in range (5):
+fotky()
+for i in range (5):
         if i != vyber_zviera:
             nespr_zver_count += 1 
             nespravne_zviera_img = PhotoImage(file=f"school_projects/kružok/2023ulohy/2. uloha/zvierata+stopy/zviera{i}.png")
@@ -23,7 +23,7 @@ def fotky():
             print(f"spravne zviera {i}")
             
             
-fotky()
+# fotky()
 c.mainloop()
 
 
