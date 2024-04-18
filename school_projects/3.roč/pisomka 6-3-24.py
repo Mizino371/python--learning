@@ -13,7 +13,7 @@ def klik_na_platno(suradnice):          #vytvoríš si skupinu nejakých príkaz
                                # a ak väčšie, tak vykreslí text v dolnom poli modrou.
         canvas.create_text(x,y,text="Python", fill= "red", angle= x*-1) #angle nieje 
                                                                         #dôležitý ani pri jendom
-    elif(y>250):
+    if(y>250):
         canvas.create_text(x,y,text="Python", fill= "blue", angle= x*-1)
     
 
