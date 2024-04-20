@@ -1,0 +1,7 @@
+V projekte je korytnačka a funkcie s parametrami.
+Preskúmaj a zisti, čo tieto funkcie kreslia. Pri ďalšom programovaní tieto funkcie nemodifikuj.
+ 
+Dokonči funkciu dom tak, aby pomocou funkcií stvorec a trojuh nakreslila domček s určenou veľkosťou strany.
+
+Navrhni funkciu domy9 tak, aby nakreslila v jednom rade 9 domov s veľkosťou strany 30 krokov.
+

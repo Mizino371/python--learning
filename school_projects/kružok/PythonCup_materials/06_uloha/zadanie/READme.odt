@@ -1,0 +1,8 @@
+Do grafickej plochy (canvas) vlož obrázok futbalového ihriska. Do programu vlož obrázok futbalovej lopty.
+
+Naprogramuj, aby sa po stlačení medzery:
+lopta objavila v bielom kruhu
+potom nech sa pohybuje na náhodné miesto v pravej časti grafickej plochy, teda na pravú stranu ihriska
+keď sa lopta dostane na pravú stranu ihriska:
+ak trafí bránku, do príkazového riadku sa vypíše text "GÓÓÓL !"
+ak netrafí bránku, vypíše sa nejaká iná správa

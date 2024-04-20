@@ -1,0 +1,5 @@
+Do stredu grafickej plochy (canvas) vlož obrázok zázračného mešca.
+
+Naprogramuj
+po štarte sa program v príkazovom riadku spýta, koľko mincí potrebujeme
+po zadaní odpovede od používateľa sa nad mešcom objaví príslušný počet mincí; každá minca sa náhodne umiestni v hornej časti plochy tak, aby nezakrývala mešec

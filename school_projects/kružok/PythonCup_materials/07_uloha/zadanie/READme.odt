@@ -1,0 +1,5 @@
+Do grafickej plochy (canvas) priprav obrázok hracej kocky a obrázok pre nejakého hráča. Hráč-telepat si pomyslí číslo, ktoré by malo padnúť na kocke a program zabezpečí, že toto číslo sa na kocke naozaj zobrazí.
+
+Naprogramuj
+po štarte programu sa nad hráčom objaví text "chcem hodiť" a za ním náhodné číslo z intervalu 1 až 6, kocka je zatiaľ skrytá
+po 1 sekunde sa na náhodnom mieste nad hráčom ukáže kocka, na ktorej je práve toľko bodiek, koľko si hráč "pomyslel"

@@ -1,0 +1,7 @@
+Do grafickej plochy (canvas) priprav obrázok lienky.a chrobáka.
+Naprogramuj
+po štarte programu sa lienka objaví v ľavej dolnej časti grafickej plochy, chrobák sa objaví na náhodnom mieste
+stláčaním šípok sa lienka pohybuje po grafickej ploche
+keď sa lienka dostane blízko chrobáka, v príkazovom riadku IDLE sa objaví správa, napr. "Ahoj chrobáčik"
+pridaj aj ďalšie postavy, ktoré môže chrobák navštevovať
+

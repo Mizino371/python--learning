@@ -1,0 +1,6 @@
+Skrinka s knihami
+Napíšte program, ktorý nakreslí skrinku a v nej knihy.
+Skrinka má vždy 5 políc, ktoré sú od seba vzdialené 50 krokov. Na každej polici je náhodný počet kníh, medzi 8 až 13. Každá kniha má náhodnú šírku medzi 10 až 15 a náhodnú výšku medzi 25 až 45. Každá kniha je vyfarbená náhodnou farbou (výberom z niekoľkých málo farieb). 
+Kedže kníh na policiach je rôzny počet a majú náhodnú šírku, aj výsledná skrinka bude mať pri každom spustení rôznu šírku (zrejme podľa najviac zaplnenej police).
+Pomôcka: Skrinku môžete nakresliť až po vykreslení všetkých kníh.
+** (náročenejšie zadanie) Zabezpečte, aby žiadne dve knihy, ktoré sú vedľa seba, nemali rovnakú farbu. Otestujte pre dve a tri farby.

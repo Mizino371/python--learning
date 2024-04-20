@@ -1,0 +1,8 @@
+V projekte je korytnačka, funkcia kniha s dvoma parametrami - šírkou a výškou knihy a volanie funkcie kniha pri štarte programu s náhodnými hodnotami pre šírku a výšku.
+
+Naprogramuj
+- dokonči funkciu kniha tak, aby nakreslila jednu knihu so zadanou šírkou a výškou
+- pri štarte programu vykresli policu s 10 knihami;
+  pred prvú knihu a za poslednú knihu nakresli ešte kúsok police
+
+Po vyriešení tejto úlohy môžeš vyriešiť rozšírené zadanie Skrinka s knihami.

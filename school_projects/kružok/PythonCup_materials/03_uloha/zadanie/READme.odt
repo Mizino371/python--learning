@@ -1,0 +1,6 @@
+Naprogramuj
+po štarte programu sa v grafickej ploche na 1 sekundu objaví náhodné číslo medzi 10000 a 100000; toto číslo si má hráč zapamätať
+potom program v príkazovom riadku zobrazí otázku: "Aké bolo moje číslo?" a čaká na hráčovu odpoveď
+ak hráč zadá správne číslo, v grafickej ploche sa zobrazí správa SUPER
+ak hráč nezadá také číslo, ako sa objavilo na začiatku, zobrazí sa nejaká správa a aj pôvodné číslo
+týmto hra končí
