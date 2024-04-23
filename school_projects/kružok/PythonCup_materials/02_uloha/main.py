@@ -12,14 +12,15 @@ def move_obj():
     
     
     
-
-    if coord_stvor[0]+15>=500:
+        # kontrola polohy a okrajov 
+    if coord_stvor[0]+15>=500: #pravá stena check
         pos = -5
     
-    elif coord_stvor[0]<=0:
+    elif coord_stvor[0]<=0: # ľavá strana check
         pos = 5
     c.move("stvorec",pos,0)
-def loop():
+
+def loop():                 #opakovanie
     c.after(100,loop)
     c.after(100,move_obj)  
 
