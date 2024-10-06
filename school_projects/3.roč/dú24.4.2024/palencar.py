@@ -11,12 +11,12 @@ def lopta():
     y= randint(10,400)
     
     lopta_poloha = c.coords("lopta"[1])
-    c.create_oval(x,y,x+20,y+20,tags="lopta")
+    c.create_oval(x,y,x+20,y+20,tags="lopta",fill="black")
     # if lopta_poloha 
     
 def pohyb_ciary(event):
     
-    c.create_line(250,490,300,490,tags="ciara")
+    c.create_line(250,490,300,490,tags="ciara",fill="red")
     if event.keysym =="Left":
         c.move("ciara",-5,0)
     elif event.keysym =="Right":
@@ -26,7 +26,7 @@ def loop():
      c.after(100,loop)
      c.after(100,lopta)
      
-    
+loop()   
 c.bind_all("<KeyPress>",pohyb_ciary)
 
 c.mainloop()

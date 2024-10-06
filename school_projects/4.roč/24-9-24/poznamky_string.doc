@@ -1,0 +1,10 @@
+a = 13
+ - typ premennej integer
+ b= "PONDELOK"
+  - typ premennej string
+
+a = "5"
+b = "10"
+c = a+b
+c = "510" - zreťazenie
+
