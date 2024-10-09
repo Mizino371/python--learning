@@ -6,7 +6,7 @@ def opakovanie_scitania():
 
     spravny_vysledok = scitanec_1 + scitanec_2 
 
-    if (scitanec_1 + (scitanec_2)) == input_vysledok:
+    if (scitanec_1 + scitanec_2) == input_vysledok:
         print("SPRÁVNE ")
 
     else:
