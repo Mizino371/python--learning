@@ -9,14 +9,14 @@ def cezarova_sifra():
     for i in range(len(vstupna_veta)):
         
         # velke pismena
-        if 65<=ord(vstupna_veta[i] ) <=90:
+        if ord("A")<=ord(vstupna_veta[i] ) <=ord("Z"):
             if ord(vstupna_veta[i]) + krok_sifrovania > 90:
                 slovo_sifrovane = ord("A")+  (ord(vstupna_veta[i]) + krok_sifrovania -1) -(ord("Z"))
             else:
                 slovo_sifrovane = ord(vstupna_veta[i])+krok_sifrovania
         
         # male pismena
-        elif 97 <=ord(vstupna_veta[i] )<= 122:
+        elif ord("a") <=ord(vstupna_veta[i] )<= ord("z"):
             if ord(vstupna_veta[i] )+krok_sifrovania > 122:
                 slovo_sifrovane = ord("a") +(ord(vstupna_veta[i]) + krok_sifrovania -1) -  ord("z")
             else:
