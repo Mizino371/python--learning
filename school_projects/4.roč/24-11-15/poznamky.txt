@@ -1,0 +1,13 @@
+1. n%k ==> zvysok po delení k  % = modulo 
+    Pr. n%2 ==> zvysok po delení 2
+
+2. n//2 ==> celočíselné delenie 
+    Pr. p = 13//2
+        p ==> 6
+
+        n = 1257
+        vysledok = n//10
+        vysledok = 125
+
+3. n**3 ==> n^3 ==> umocňovanie
+    Pr. 

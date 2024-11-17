@@ -1,0 +1,4 @@
+Cykly ==> s pevným počtom opakovaní
+        ==> python  = for 
+      ==> s podmienkou
+        ==> pytho = while
