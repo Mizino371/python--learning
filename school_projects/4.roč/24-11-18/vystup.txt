@@ -1,0 +1,7 @@
+jelenovipivonelej - ide o palindróm
+kobylamamalybok - ide o palindróm
+anna - ide o palindróm
+tahat - ide o palindróm
+vcerasazotmelo - nie je palindróm
+AbdA - nie je palindróm
+elzejezle - ide o palindróm
