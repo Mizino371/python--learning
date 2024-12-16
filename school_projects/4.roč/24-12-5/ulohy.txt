@@ -1,0 +1,11 @@
+jednotkova kružnica 
+    (x,y) = [cos alfa, sin alfa]
+    uhol = 30 
+    uhol_rad = math.radians(uhol)
+    xA = math.cos(uhol_rad)
+    yA = math.sin(uhol_rad)
+
+s polomerom r 
+        (x,y) = [cos alfa *r, sin alfa *r]
+
+
