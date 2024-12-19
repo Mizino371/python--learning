@@ -15,4 +15,8 @@ for i in range(1000):
     
     
 for i in range(6):  
-    print(f"strana s číslom {i+1}: {kocka[i]}")
+    print(f"strana s číslom {i+1}: {kocka[i]}",kocka[i])
+    
+    
+    
+   
