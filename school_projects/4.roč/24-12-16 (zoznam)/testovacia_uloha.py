@@ -22,3 +22,8 @@ for i2 in range(10):
 # X = 40 volne
 
 c.mainloop()
+
+
+
+
+#zoznam = odpoved.split()/ (";")

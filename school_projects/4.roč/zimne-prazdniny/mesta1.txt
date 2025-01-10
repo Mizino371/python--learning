@@ -1,0 +1,45 @@
+Amsterdam;Holandsko
+Andorra;Andorra
+Atény;Grécko
+Belehrad;Srbsko
+Berlín;Nemecko
+Bern;Švajčiarsko
+Bratislava;Slovensko
+Brusel;Belgicko
+Budapešť;Maďarsko
+Bukurešť;Rumunsko
+Dublin;Írsko
+Helsinki;Fínsko
+Kišiňov;Moldavsko
+Kodaň;Dánsko
+Kyjev;Ukrajina
+Lisabon;Portugalsko
+Londýn;Spojené kráľovstvo
+Ľubľana;Slovinsko
+Luxemburg;Luxembursko
+Madrid;Španielsko
+Minsk;Bielorusko
+Monako;Monako
+Moskva;Rusko
+Nikózia;Cyprus
+Oslo;Nórsko
+Paríž;Francúzsko
+Podgorica;Čierna Hora
+Praha;Česko
+Reykjavík;Island
+Riga;Lotyšsko
+Rím;Taliansko
+San Marino;San Maríno
+Sarajevo;Bosna a Hercegovina
+Skopje;Macedónsko
+Sofia;Bulharsko
+Štokholm;Švédsko
+Tallinn;Estónsko
+Tirana;Albánsko
+Vaduz;Lichtenštajnsko
+Valletta;Malta
+Varšava;Poľsko
+Vatikán;Vatikán
+Viedeň;Rakúsko
+Vilnius;Litva
+Záhreb;Chorvátsko
