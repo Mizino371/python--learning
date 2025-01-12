@@ -21,4 +21,4 @@ while riadok !="":
 
 subor.close()
 
-
+ 
