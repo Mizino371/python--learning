@@ -27,7 +27,9 @@ def klikacka(sur):
     if str(clicked_tag[0]) in data["pocasie"]  :
         index_pocasia[0]= data["pocasie"].index(str(clicked_tag[0]))
     if sur.y < 520:
+        teplota_nizsia = entry.get().strip()
         c.create_image(sur.x, sur.y,image = data["Obrazky"][index_pocasia[0]])
+        c.create_text(sur.x,sur.y+45,text=f"{teplota_nizsia}/{int(teplota_nizsia)+4}", font="Arial 20 ")
         c.update()
     print(index_pocasia)
    
