@@ -1,9 +1,8 @@
-vstup = input("Zadaj svoje známyk na vysvedčení a oddeľ medzerou: ")
+vstup = input("Zadaj svoje známky na vysvedčení a oddeľ medzerou: ")
 vstup = vstup.strip().split(" ")
 if vstup.count("5") >0: #rýchla dedukcia na základe známky 5 
     print("Neprospel")
-for i in range(len(vstup)): # premena známok z stringu na int
-    vstup[i] = int(vstup[i])
+vstup = [int(i) for i in vstup] # premena známok z stringu na int
 
 priemer = sum(vstup)/len(vstup)
 

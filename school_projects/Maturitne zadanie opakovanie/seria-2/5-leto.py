@@ -32,5 +32,5 @@ def lodka(x,y):
 
 canvas.create_rectangle(0,300,800,600,fill="light blue")
 
-klik = canvas.bind("<Button-1>",klik)
+canvas.bind("<Button-1>", klik)
 canvas.mainloop()
