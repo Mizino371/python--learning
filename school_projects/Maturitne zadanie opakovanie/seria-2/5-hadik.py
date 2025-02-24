@@ -7,7 +7,7 @@ def posun(sur):
     if sur.keysym == "Up":
         c.move("had",0,-2)
         if 0 >= c.coords("had")[1]:
-
+            c.move("had",0,2)
     elif sur.keysym == "Down":
         c.move("had",0,2)
     elif sur.keysym == "Left":
@@ -15,6 +15,6 @@ def posun(sur):
     elif sur.keysym == "Right":
         c.move("had",0,2)
 
-
+c.bind("<KeyPress>",posun)
 
 c.mainloop()
