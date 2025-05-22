@@ -14,7 +14,7 @@ def posun(sur):
         c.move("had",-2,0)
     elif sur.keysym == "Right":
         c.move("had",0,2)
-
+    c.update()
 c.bind("<KeyPress>",posun)
 
 c.mainloop()

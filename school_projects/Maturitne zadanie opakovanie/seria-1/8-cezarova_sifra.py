@@ -5,6 +5,7 @@ n= r.randint(5,50) #náhodný posun písmen
 veta = veta.strip()
 pismenka = [0]*len(veta) 
 print(f"Posun písmen je { n}")
+print(chr(126))
 
 for i in range(len(veta)):
     pismenka[i] = ord(veta[i]) #zmena každého znaku na ascii kod a zaradenie do samostatných prvkov listu

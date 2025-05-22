@@ -12,12 +12,13 @@ def obdlznik():
         r_y = r.randint(0,500)
         if r_x <= 400 and r_y <= 250:
             color = "red"
+        elif r_x < 400 and r_y >= 250:
+            color = "yellow"
         elif 400<r_x<= 800 and r_y <= 250  :
             color = "green"
-        elif r_x > 400 and r_y > 250:
-            color = "blue"
-        elif r_x <400 and r_y >= 250:
-            color = "yellow"
+        if r_x > 400:
+            if r_y > 250:
+                color = "blue"
 
         c.create_oval(r_x-5,r_y-5,r_x+5,r_y+5,fill=color)
 

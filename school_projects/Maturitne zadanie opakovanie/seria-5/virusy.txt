@@ -1,0 +1,16 @@
+Pc1 BlackFriday
+Pc2 ILoveYou
+Pc2 Win32Worm
+Pc3 AdwareZAS
+Pc4 Trojan.Autolt
+Pc4 ILoveYou
+Pc4 Melissa
+Pc5 CodeRed
+Pc6 BlackFriday
+Pc6 ILoveYou
+Pc6 Trojan.Autolt
+Pc6 BlackFriday
+Pc7 Trojan.Autolt
+Pc7 ILoveYou
+Pc8 CodeRed
+Pc9 Melissa

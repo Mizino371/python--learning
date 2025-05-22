@@ -1,0 +1,18 @@
+subor  = open("/Users/m1promichalpalencar/Desktop/python--learning/school_projects/Maturitne zadanie opakovanie/seria-5/virusy.txt", "r")
+zoznam_vir = {}
+p_virusov = 0
+for riadok in subor:
+    riadok = riadok.strip().split(" ")
+    if riadok[1] not in zoznam_vir:
+        zoznam_vir[riadok[1]] = 1
+    else:
+        zoznam_vir[riadok[1]] += 1
+    p_virusov += 1
+
+
+for k in zoznam_vir:
+    print(f"Vírus {k} sa vyskytol {zoznam_vir[k]} krát.")
+
+print(f"Zachytených bolo {p_virusov} vírusov na školskej sieti")
+
+subor.close()

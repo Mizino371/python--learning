@@ -13,7 +13,7 @@ def hra():
     cisla = [0] * 3
     for i in range(3):
         cisla[i] = r.randint(1,6)
-        c.after(2000)
+        c.after(1500)
 
         c.create_text(100+(i*100),250,text=cisla[i],font="Arial 60")
         c.update()
